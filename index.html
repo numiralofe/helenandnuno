@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>helenAndNuno</title>
+  <title>panton.io</title>
 
   <style>
     html,
@@ -12,6 +12,7 @@
       width: 100%;
       height: 100%;
       overflow: hidden;
+
       font-family:
         Inter,
         ui-sans-serif,
@@ -35,7 +36,7 @@
       color: white;
     }
 
-    /* atmospheric sky glow */
+    /* atmospheric glow */
     body::before {
       content: "";
       position: absolute;
@@ -84,9 +85,11 @@
     .content {
       position: relative;
       z-index: 2;
+
       display: grid;
       gap: 1.4rem;
       place-items: center;
+
       padding: 1.5rem;
     }
 
@@ -108,10 +111,25 @@
       user-select: none;
     }
 
+    .magic-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 0.88;
+    }
+
+    .magic-text span:last-child {
+      margin-top: -0.08em;
+    }
+
     .magic-title .star {
       font-size: 0.38em;
       opacity: 0.95;
+
       animation: sparkle 2s ease-in-out infinite alternate;
+
+      align-self: flex-start;
+      margin-top: 0.35em;
     }
 
     .magic-title .star:nth-child(1) {
@@ -138,6 +156,7 @@
       font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 0.35em;
+
       color: rgba(255,255,255,0.45);
 
       text-shadow:
@@ -202,9 +221,16 @@
   <div class="content">
 
     <div class="magic-title">
+
       <span class="star">✦</span>
-      <span>magic moment</span>
+
+      <span class="magic-text">
+        <span>magic</span>
+        <span>moment</span>
+      </span>
+
       <span class="star">✦</span>
+
     </div>
 
     <div class="label">
